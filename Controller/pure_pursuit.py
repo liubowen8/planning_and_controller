@@ -1,5 +1,6 @@
 # 纯跟踪
-# 纯跟踪算法的 代码222222222
+# 纯跟踪算法的 代码
+
 import numpy as np
 import math
 import matplotlib.pyplot as plt
