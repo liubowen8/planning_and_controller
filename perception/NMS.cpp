@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 // 首先要搞清楚nms输入的东西是什么
-// nms有三个输入 ，nms只需要三个输入
+// nms有三个输入 ，nms只需要三个输入， 注意这里是对单类别进行nms的代码
 // boxs 二维数组 n*4  这里的4表示的是左上角坐标和右下角坐标
 // scores 一维数组 n， 和boxes是对于的，表示这个box对于的检测score
 // 一个变量 表示 阈值
@@ -56,7 +56,7 @@ vector<int> nms(vector<vector<float> > boxes, vector<float> scores, float thresh
         boxes_score_index first_one;
         first_one= boxes_score_index_s[0];
         res.push_back(first_one.index);  
-        // 拿到第一个，因为第一个是score最大的，并把 数组的第一个 box的index 导入数组中。
+        // 拿到第一个，因为第一个是score最大的，并把此box的index 导入数组中。
         for(int i=1; i< boxes_score_index_s.size(); i++){
             boxes_score_index compared_one= boxes_score_index_s[i];
             float iou_value= iou(first_one.box, compared_one.box);
