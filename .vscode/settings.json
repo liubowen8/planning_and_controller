@@ -7,5 +7,6 @@
         "ostream": "cpp",
         "random": "cpp",
         "*.tcc": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Enabled"
 }

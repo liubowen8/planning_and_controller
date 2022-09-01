@@ -31,4 +31,3 @@ void offset_operator(vector<vector<float> > &boxes, vector<int> predict_classes,
         }
     }
 }
-
